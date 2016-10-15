@@ -14,6 +14,8 @@
 		BBCC60841C113FEF00E184BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBCC60821C113FEF00E184BB /* LaunchScreen.storyboard */; };
 		BBCC608F1C113FEF00E184BB /* ProgressViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCC608E1C113FEF00E184BB /* ProgressViewDemoTests.swift */; };
 		BBCC609A1C113FEF00E184BB /* ProgressViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCC60991C113FEF00E184BB /* ProgressViewDemoUITests.swift */; };
+		BBCC60A91C11403300E184BB /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCC60A81C11403300E184BB /* CircleProgressView.swift */; };
+		BBCC60AB1C11405A00E184BB /* CircleShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCC60AA1C11405A00E184BB /* CircleShapeLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		BBCC60951C113FEF00E184BB /* ProgressViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBCC60991C113FEF00E184BB /* ProgressViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewDemoUITests.swift; sourceTree = "<group>"; };
 		BBCC609B1C113FEF00E184BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBCC60A81C11403300E184BB /* CircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
+		BBCC60AA1C11405A00E184BB /* CircleShapeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleShapeLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		BBCC60781C113FEF00E184BB /* ProgressViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BBCC60A71C11400C00E184BB /* CircleProgressView */,
 				BBCC60791C113FEF00E184BB /* AppDelegate.swift */,
 				BBCC607B1C113FEF00E184BB /* ViewController.swift */,
 				BBCC607D1C113FEF00E184BB /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				BBCC609B1C113FEF00E184BB /* Info.plist */,
 			);
 			path = ProgressViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		BBCC60A71C11400C00E184BB /* CircleProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				BBCC60A81C11403300E184BB /* CircleProgressView.swift */,
+				BBCC60AA1C11405A00E184BB /* CircleShapeLayer.swift */,
+			);
+			path = CircleProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBCC607C1C113FEF00E184BB /* ViewController.swift in Sources */,
+				BBCC60AB1C11405A00E184BB /* CircleShapeLayer.swift in Sources */,
 				BBCC607A1C113FEF00E184BB /* AppDelegate.swift in Sources */,
+				BBCC60A91C11403300E184BB /* CircleProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -387,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -484,6 +500,7 @@
 				BBCC60A01C113FEF00E184BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBCC60A11C113FEF00E184BB /* Build configuration list for PBXNativeTarget "ProgressViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +509,7 @@
 				BBCC60A31C113FEF00E184BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBCC60A41C113FEF00E184BB /* Build configuration list for PBXNativeTarget "ProgressViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +518,7 @@
 				BBCC60A61C113FEF00E184BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
